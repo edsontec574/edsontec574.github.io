@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Metalurgia Extractiva para Estudiantes</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Metalurgia Extractiva</h1>
+            <p>Guía para estudiantes de operación de plantas concentradoras</p>
+        </div>
+    </header>
+
+    <nav>
+        <div class="container">
+            <ul>
+                <li><a href="#introduccion">Introducción</a></li>
+                <li><a href="#etapas">Etapas</a></li>
+                <li><a href="#equipos">Equipos</a></li>
+                <li><a href="#seguridad">Seguridad</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="container">
+        <section id="introduccion" class="section">
+            <h2>Introducción a la Metalurgia Extractiva</h2>
+            <p>La metalurgia extractiva es la rama de la metalurgia que se encarga de la extracción de metales valiosos a partir de minerales y su posterior refinación para obtener metales puros. Este proceso es fundamental en la industria minera y se lleva a cabo en plantas concentradoras.</p>
+            <div class="image-container">
+                <img src="https://www.mineria-pa.com/wp-content/uploads/2020/02/planta-concentradora.jpg" alt="Planta concentradora">
+            </div>
+        </section>
+
+        <section id="etapas" class="section">
+            <h2>Etapas del Proceso</h2>
+            <div class="etapas-grid">
+                <div class="etapa-card">
+                    <h3>1. Chancado</h3>
+                    <p>Reducción del tamaño de las rocas mineralizadas hasta obtener un tamaño uniforme.</p>
+                </div>
+                <div class="etapa-card">
+                    <h3>2. Molienda</h3>
+                    <p>Reducción del tamaño de partícula mediante molinos para liberar las partículas de mineral.</p>
+                </div>
+                <div class="etapa-card">
+                    <h3>3. Flotación</h3>
+                    <p>Separación de minerales valiosos de la ganga mediante procesos físico-químicos.</p>
+                </div>
+                <div class="etapa-card">
+                    <h3>4. Espesamiento</h3>
+                    <p>Eliminación de agua del concentrado para su posterior tratamiento.</p>
+                </div>
+                <div class="etapa-card">
+                    <h3>5. Filtrado</h3>
+                    <p>Eliminación adicional de humedad para obtener un concentrado más seco.</p>
+                </div>
+                <div class="etapa-card">
+                    <h3>6. Fundición</h3>
+                    <p>Proceso pirometalúrgico para separar los metales de los concentrados.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="equipos" class="section">
+            <h2>Equipos Principales</h2>
+            <ul class="equipos-lista">
+                <li>Chancadoras primarias y secundarias</li>
+                <li>Molinos de bolas y barras</li>
+                <li>Celdas de flotación</li>
+                <li>Espesadores</li>
+                <li>Filtros prensa</li>
+                <li>Hornos de fundición</li>
+            </ul>
+        </section>
+
+        <section id="seguridad" class="section">
+            <h2>Medidas de Seguridad</h2>
+            <div class="seguridad-grid">
+                <div class="seguridad-item">
+                    <h3>Equipo de Protección Personal (EPP)</h3>
+                    <p>Uso obligatorio de casco, lentes de seguridad, protectores auditivos, calzado de seguridad y ropa de trabajo adecuada.</p>
+                </div>
+                <div class="seguridad-item">
+                    <h3>Procedimientos de Trabajo Seguro</h3>
+                    <p>Seguir estrictamente los procedimientos establecidos para cada operación.</p>
+                </div>
+                <div class="seguridad-item">
+                    <h3>Bloqueo y Etiquetado</h3>
+                    <p>Asegurar equipos antes de realizar mantenimiento.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>© 2025 Metalurgia Extractiva para Estudiantes</p>
+            <p>Recurso educativo gratuito</p>
+        </div>
+    </footer>
+
+    <link href="https://cdn.jsdelivr.net/npm/@n8n/chat/dist/style.css" rel="stylesheet" />
+
+    <style>
+      /* Ajustamos el contenedor para que esté más abajo */
+      #tecno-chat {
+        position: fixed !important;
+        bottom: 80px !important;   /* más abajo: antes era 20px */
+        right: 20px !important;
+        z-index: 9999 !important;
+      }
+    </style>
+    
+    <script type="module">
+      import { createChat } from 'https://cdn.jsdelivr.net/npm/@n8n/chat/dist/chat.bundle.es.js';
+    
+      createChat({
+        webhookUrl: 'http://18.231.77.64:5678/webhook/39e29331-8b02-4af2-90d5-f37bd0ee750b/chat',
+        target: '#tecno-chat',
+        mode: 'window',
+        showWelcomeScreen: true,
+        defaultLanguage: 'es',
+        initialMessages: [
+          '¡Bienvenidos a Tecno!',
+          'Soy tu asistente guía para la planta piloto de procesamiento de minerales en Tecsup.'
+        ],
+        i18n: {
+          es: {
+            title: 'TecnoGuía',
+            subtitle: 'Asistente educativo de procesamiento de minerales',
+            getStarted: 'Iniciar nueva conversación',
+            inputPlaceholder: '¿En qué tema quieres profundizar hoy?'
+          }
+        },
+        loadPreviousSession: true,
+        planta: 'piloto',
+        institucion: 'Tecsup'
+      });
+    </script>
+    
+    <div id="tecno-chat" style="width: 400px; height: 600px;"></div>
+    
+</body>
+</html>
